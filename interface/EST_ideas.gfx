@@ -1,0 +1,42 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_kaitseliit"
+		texturefile = "gfx/interface/ideas/idea_kaitseliit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_EST_consumer"
+		texturefile = "gfx/interface/ideas/idea_EST_consumer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_EST_fortification"
+		texturefile = "gfx/interface/ideas/idea_EST_fortification.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_EST_military"
+		texturefile = "gfx/interface/ideas/idea_EST_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_EST_production_eff"
+		texturefile = "gfx/interface/ideas/idea_EST_production_eff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_goal_generic_air_fighter2"
+		texturefile = "gfx/interface/ideas/idea_goal_generic_air_fighter2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/ideas/idea_goal_generic_army_doctrines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_goal_generic_construct_infrastructure"
+		texturefile = "gfx/interface/ideas/idea_goal_generic_construct_infrastructure.dds"
+	}
+}

@@ -1,0 +1,83 @@
+music = {
+	name = "EST1"
+	file = "EST1.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "EST2"
+	file = "EST2.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "EST3"
+	file = "EST3.ogg"
+	volume = 0.60
+}
+
+music = {
+	name = "EST4"
+	file = "EST4.ogg"
+	volume = 0.50
+}
+
+music = {
+	name = "EST5"
+	file = "EST5.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "EST6"
+	file = "EST6.ogg"
+	volume = 0.55
+}
+
+music = {
+	name = "EST7"
+	file = "EST7.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "EST8"
+	file = "EST8.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "EST9"
+	file = "EST9.ogg"
+	volume = 0.65
+}
+music = {
+	name = "EST10"
+	file = "EST10.ogg"
+	volume = 0.65
+}
+music = {
+	name = "EST11"
+	file = "EST11.ogg"
+	volume = 0.65
+}
+music = {
+	name = "EST12"
+	file = "EST11.ogg"
+	volume = 0.65
+}
+music = {
+	name = "EST13"
+	file = "EST11.ogg"
+	volume = 0.65
+}
+music = {
+	name = "EST14"
+	file = "EST11.ogg"
+	volume = 0.65
+}
+music = {
+	name = "EST15"
+	file = "EST11.ogg"
+	volume = 0.65
+}

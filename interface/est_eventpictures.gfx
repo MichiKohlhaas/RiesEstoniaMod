@@ -1,0 +1,118 @@
+spriteTypes = {
+
+
+spriteType = {
+name = "GFX_report_event_commusupport"
+texturefile = "gfx/event_pictures/report_event_commusupport.dds"
+}
+
+spriteType = {
+name = "GFX_report_event_estgoodharvest"
+texturefile = "gfx/event_pictures/report_event_estgoodharvest.dds"
+}
+
+spriteType = {
+name = "GFX_report_event_nofight"
+texturefile = "gfx/event_pictures/report_event_nofight.dds"
+}
+
+spriteType = {
+name = "GFX_report_event_winter"
+texturefile = "gfx/event_pictures/report_event_winter.dds"
+}
+
+spriteType = {
+name = "GFX_report_event_estalliance"
+texturefile = "gfx/event_pictures/report_event_estalliance.dds"
+}
+
+spriteType = {
+name = "GFX_news_event_support_commu"
+texturefile = "gfx/event_pictures/news_event_support_commu.dds"
+}
+
+spriteType = {
+name = "GFX_report_event_generic_factory"
+texturefile = "gfx/event_pictures/report_event_generic_factory.dds"   
+}
+
+spriteType = {
+name = "GFX_report_event_computing_center"
+texturefile = "gfx/event_pictures/report_event_computing_center.dds"   #Vaba
+}
+
+spriteType = {
+name = "GFX_report_event_bunker"
+texturefile = "gfx/event_pictures/report_event_bunker.dds" 
+}
+
+spriteType = {
+name = "GFX_report_event_metalurgs"
+texturefile = "gfx/event_pictures/report_event_metalurgs.dds"  
+}
+
+spriteType = {
+name = "GFX_report_event_ecocrises"
+texturefile = "gfx/event_pictures/report_event_ecocrises.dds"  
+}
+
+spriteType = {
+name = "GFX_report_event_estkuningas"
+texturefile = "gfx/event_pictures/report_event_estkuningas.dds"  
+}
+
+spriteType = {
+name = "GFX_report_event_sovpurge"
+texturefile = "gfx/event_pictures/report_event_sovpurge.dds"  
+}
+
+spriteType = {
+name = "GFX_report_event_sovclaims"
+texturefile = "gfx/event_pictures/report_event_sovclaims.dds"  
+}
+
+spriteType = {
+name = "GFX_report_event_vagi"
+texturefile = "gfx/event_pictures/report_event_vagi.dds"  
+}
+
+spriteType = {
+name = "GFX_report_event_parlament"
+texturefile = "gfx/event_pictures/report_event_parlament.dds"  
+}
+
+spriteType = {
+name = "GFX_report_event_march"
+texturefile = "gfx/event_pictures/report_event_march.dds"  
+}
+
+spriteType = {
+name = "GFX_report_event_vagi2"
+texturefile = "gfx/event_pictures/report_event_vagi2.dds" 
+}
+
+spriteType = {
+name = "GFX_report_event_vagi3"
+texturefile = "gfx/event_pictures/report_event_vagi3.dds" 
+}
+
+spriteType = {
+name = "GFX_news_event_moskva"
+texturefile = "gfx/event_pictures/news_event_moskva.dds" 
+}
+
+spriteType = {
+name = "GFX_news_event_kaunas"
+texturefile = "gfx/event_pictures/news_event_kaunas.dds" 
+}
+
+spriteType = {
+name = "GFX_news_event_riga"
+texturefile = "gfx/event_pictures/news_event_riga.dds" 
+}
+
+spriteType = {
+name = "GFX_news_event_berlin"
+texturefile = "gfx/event_pictures/news_event_berlin.dds" 
+}
+}

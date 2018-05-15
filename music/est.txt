@@ -1,0 +1,242 @@
+music = {
+	song = "EST1"
+	
+	chance = {
+		factor = 4
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST2"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST3"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST4"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST5"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST6"
+	
+	chance = {
+		factor = 2
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST7"
+	
+	chance = {
+		factor = 5
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST8"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST9"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST10"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST11"
+	
+	chance = {
+		factor = 5
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST12"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST13"
+	
+	chance = {
+		factor = 2
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST14"
+	
+	chance = {
+		factor = 2
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "EST15"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = EST
+					}
+				}
+		}		
+	}	
+}
+
+
+##Hentz
