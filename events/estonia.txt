@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Estonian Events
 ###########################
 
@@ -1556,7 +1556,7 @@ country_event = {
 				set_nationality = EST
 			}
 		}
-		EST = { annex_country = { target = LAT transfer_troops = yes } }
+		annex_country = { target = LAT transfer_troops = yes }
 		add_political_power = 50
 		add_named_threat = { threat = 5 name = est.49.t }
 	}
