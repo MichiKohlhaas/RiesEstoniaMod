@@ -1296,7 +1296,7 @@ country_event = {
 			}
 		}
 		add_popularity = { ideology = democratic popularity = 0.05 }
-        unity_factor = 0.03
+        #add_stability = 0.03
         SOV = { add_opinion_modifier = { target = EST modifier = seeking_our_secrets } }
         EST = { add_opinion_modifier = { target = SOV modifier = claimed_our_lands } }
 	}
@@ -1315,7 +1315,8 @@ country_event = {
 		name = "Yes! He is the right one!"
 		ai_chance = { factor = 25 }
 		set_party_name = { 
-			ideology = despotism long_name = EST_monarchy name = EST_monarchy_long }
+			ideology = neutrality 
+			long_name = EST_monarchy name = EST_monarchy_long }
 			create_country_leader = {
 			name = "Anton Jõevähi"
 			desc = "KARL_DESC"

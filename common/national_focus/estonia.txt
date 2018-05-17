@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = estonian_focus
 	
 	country = {
@@ -414,7 +414,7 @@
 			}
 		}
 	}
-	focus = {
+focus = {
 		id = EST_start_central_industrial_region
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = EST_tallinn_tartu_highways focus = EST_foundation_of_kumu }
@@ -624,7 +624,7 @@
 		}	
     }
 	focus = {
-		id = POL_rocket_development
+		id = POL_rocket_development #change
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = EST_additional_research_slot }
 		
@@ -674,7 +674,7 @@
 			#1x 50% reduction in land doctrine research
 		}
 	}
-	focus = {
+focus = {
 		id = EST_prepare_for_war
 		icon = GFX_goal_generic_build_tank
 		
@@ -749,7 +749,7 @@
 			#50% armor research
 		}
 	}
-	focus = {
+focus = {
 		id = EST_invite_german_experts
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = EST_study_foreign_tanks }
@@ -981,7 +981,7 @@
 	############################
 
 
-	focus = {
+		focus = {
 		id = EST_protect_against_the_red_army 
 		prerequisite = { focus = EST_the_defence focus = EST_standardization_of_equipment }
 		available = {
@@ -1782,6 +1782,7 @@
 		}
 	}
 
+
 	############################
 	##### POLITICS SECTION #####
 	############################
@@ -1806,6 +1807,7 @@
 			country_event = { id = est.30 }
 		}
 	}
+
 	focus = {
 		id = EST_collectivist_propaganda
 		icon = GFX_goal_generic_propaganda
@@ -1826,6 +1828,7 @@
 			add_ideas = propaganda_machine
 		}
 	}
+
 	focus = {
 		id = EST_reform_government
 		icon = GFX_goal_generic_propaganda
@@ -1846,6 +1849,7 @@
 			add_ideas = back_to_routes
 		}
 	}
+
 
 	##############
 	##     Nazi ##
@@ -1984,7 +1988,7 @@
 		completion_reward = {
 				custom_effect_tooltip = EST_GER_Units
 				hidden_effect = {
-				manpower = 1000
+				add_manpower = 1000
 				add_equipment_to_stockpile = {
 				type = infantry_equipment_1 #type of equipment, from file
 				amount = 1300 #amount
@@ -2045,8 +2049,8 @@
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 0 y = 3}
 						
-						marines = { x = 1 y = 0 }
-						marines = { x = 1 y = 1 }
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
 					}
 					
 					support = {
@@ -2085,7 +2089,7 @@
 		completion_reward = {
 			add_political_power = 75
 			add_popularity = { ideology = fascism popularity = 0.3}
-			add_national_unity = -0.1
+			add_stability = -0.1
 		}
 	}
 	focus = {
@@ -2109,54 +2113,43 @@
 		x = 38
 		y = 4
 		cost = 10
-		completion_reward = 
-		{
-		    hidden_effect = 
-		    {				
-				news_event = { days = 1 id = est.25 }				
+		completion_reward = {
+		    hidden_effect = {				
+			news_event = { days = 1 id = est.25 }				
 			}
 			add_opinion_modifier = { target = FIN modifier = nordic_alliance }
-			
-			FIN = 
-			{ 
+			FIN = { 
 				add_opinion_modifier = { target = ROOT modifier = nordic_alliance } 
 			}
 			add_opinion_modifier = { target = SWE modifier = nordic_alliance }
-			
-			SWE = 
-			{ 
+			SWE = { 
 				add_opinion_modifier = { target = ROOT modifier = nordic_alliance } 
 			}
-			
 			set_rule = { can_create_factions = yes }
 			create_faction = nordic_union
-			
-			if = 
-			{
-				limit = {
-					FIN = 
-					{
-						exists = yes
-						is_puppet = no
-						NOT = { has_war_with = EST }
-					}
-					SWE =
-					{
-						exists = yes
-						is_puppet = no
-						NOT = { has_war_with = EST }
-					}
+			if = {
+					limit = {
+						FIN = {
+							exists = yes
+							is_puppet = no
+							NOT = { has_war_with = EST }
+								}
+						SWE = {
+							exists = yes
+							is_puppet = no
+							NOT = { has_war_with = EST }
+								}
+						}
 					FIN = {
 						country_event = { id = est.16 days = 1 }
 					}
-					
 					SWE = {
 						country_event = { id = est.16 days = 1 }
 					}
-				}
-			}
 	    }
 	}
+}
+
 	focus = {
 		id = EST_invite_others
 		icon = GFX_goal_tripartite_pact
@@ -2190,22 +2183,24 @@
 				add_opinion_modifier = { target = ROOT modifier = nordic_alliance } 
 			}
 			if = {
-				limit = {
+					limit = {
+						NOR = {
+							exists = yes
+							is_puppet = no
+							NOT = { has_war_with = EST }
+								}
+							
+						}
 					NOR = {
-						exists = yes
-						is_puppet = no
-						NOT = { has_war_with = EST }
-					}	
-				}
-				NOR = {
-					country_event = { id = est.16 days = 1 }
-				}
-				DEN = {
-					country_event = { id = est.16 days = 1 }
-				}
-			}
-		}
+						country_event = { id = est.16 days = 1 }
+					}
+					DEN = {
+						country_event = { id = est.16 days = 1 }
+					}
 	}
+	}
+	}
+
 	focus = {
 		id = EST_invite_finland
 		icon = GFX_goal_tripartite_pact
@@ -2231,20 +2226,22 @@
 				add_opinion_modifier = { target = ROOT modifier = in_faction } 
 			}
 			if = {
-				limit = {
-					FIN = {
-						exists = yes
-						is_puppet = no
-						NOT = { has_war_with = EST }
-					}
+					limit = {
+						FIN = {
+							exists = yes
+							is_puppet = no
+							NOT = { has_war_with = EST }
+								}
 							
-				}
-				FIN = {
-					country_event = { id = est.4 days = 1 }
-				}
-			}
-		}
+						}
+					FIN = {
+						country_event = { id = est.4 days = 1 }
+					}
 	}
+	}
+	}
+
+	
 	focus = {
 		id = EST_command_forest_industry
 		prerequisite = { focus = EST_ensv }
@@ -2253,19 +2250,16 @@
 		y = 4
 		cost = 10
 		completion_reward = {
-			13 = {
-				if = { 
-					limit = { is_owned_by = EST }
+		13 = {
+				if = { limit = { is_owned_by = EST}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-								type = arms_factory
-								level = 2
-								instant_build = yes
-							}
-				}
-			}
-		}
-	}
+							type = arms_factory
+							level = 2
+							instant_build = yes
+				
+			}}}
+		}}
 	focus = {
 		id = EST_interventionism
 		icon = GFX_goal_generic_political_pressure
@@ -2917,6 +2911,7 @@
 					id = "back_to_routes"
 					value = 200
 				}
+			}
 			SWE = {
 				add_ideas = democratic_leanings
 				add_ai_strategy = {
@@ -2924,6 +2919,7 @@
 					id = "back_to_routes"
 					value = 200
 				}
+			}
 			NOR = {
 				add_ideas = democratic_leanings
 				add_ai_strategy = {
@@ -2931,6 +2927,7 @@
 					id = "back_to_routes"
 					value = 200
 				}
+			}
 			DEN = {
 				add_ideas = democratic_leanings
 				add_ai_strategy = {
@@ -2949,6 +2946,7 @@
 		available = {
 		OR {
 			has_government = democratic
+		}
 		}
 
 		x = 48

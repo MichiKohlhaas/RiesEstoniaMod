@@ -11,7 +11,6 @@ add_ideas = {
 }
 
 set_technology = {
-	mil = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -20,7 +19,7 @@ set_technology = {
 	early_destroyer = 1
 	early_submarine = 1
 	basic_submarine = 1
-	field_hospital = 1
+	tech_field_hospital = 1
 }
 
 set_convoys = 15
@@ -75,8 +74,6 @@ set_convoys = 15
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
