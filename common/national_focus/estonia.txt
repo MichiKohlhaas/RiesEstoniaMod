@@ -414,7 +414,7 @@
 			}
 		}
 	}
-focus = {
+	focus = {
 		id = EST_start_central_industrial_region
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = EST_tallinn_tartu_highways focus = EST_foundation_of_kumu }
@@ -674,7 +674,7 @@ focus = {
 			#1x 50% reduction in land doctrine research
 		}
 	}
-focus = {
+	focus = {
 		id = EST_prepare_for_war
 		icon = GFX_goal_generic_build_tank
 		
@@ -749,7 +749,7 @@ focus = {
 			#50% armor research
 		}
 	}
-focus = {
+	focus = {
 		id = EST_invite_german_experts
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = EST_study_foreign_tanks }
@@ -981,7 +981,7 @@ focus = {
 	############################
 
 
-		focus = {
+	focus = {
 		id = EST_protect_against_the_red_army 
 		prerequisite = { focus = EST_the_defence focus = EST_standardization_of_equipment }
 		available = {
@@ -1782,7 +1782,6 @@ focus = {
 		}
 	}
 
-
 	############################
 	##### POLITICS SECTION #####
 	############################
@@ -1807,7 +1806,6 @@ focus = {
 			country_event = { id = est.30 }
 		}
 	}
-
 	focus = {
 		id = EST_collectivist_propaganda
 		icon = GFX_goal_generic_propaganda
@@ -1828,7 +1826,6 @@ focus = {
 			add_ideas = propaganda_machine
 		}
 	}
-
 	focus = {
 		id = EST_reform_government
 		icon = GFX_goal_generic_propaganda
@@ -1849,7 +1846,6 @@ focus = {
 			add_ideas = back_to_routes
 		}
 	}
-
 
 	##############
 	##     Nazi ##
@@ -2113,43 +2109,54 @@ focus = {
 		x = 38
 		y = 4
 		cost = 10
-		completion_reward = {
-		    hidden_effect = {				
-			news_event = { days = 1 id = est.25 }				
+		completion_reward = 
+		{
+		    hidden_effect = 
+		    {				
+				news_event = { days = 1 id = est.25 }				
 			}
 			add_opinion_modifier = { target = FIN modifier = nordic_alliance }
-			FIN = { 
+			
+			FIN = 
+			{ 
 				add_opinion_modifier = { target = ROOT modifier = nordic_alliance } 
 			}
 			add_opinion_modifier = { target = SWE modifier = nordic_alliance }
-			SWE = { 
+			
+			SWE = 
+			{ 
 				add_opinion_modifier = { target = ROOT modifier = nordic_alliance } 
 			}
+			
 			set_rule = { can_create_factions = yes }
 			create_faction = nordic_union
-			if = {
-					limit = {
-						FIN = {
-							exists = yes
-							is_puppet = no
-							NOT = { has_war_with = EST }
-								}
-						SWE = {
-							exists = yes
-							is_puppet = no
-							NOT = { has_war_with = EST }
-								}
-						}
+			
+			if = 
+			{
+				limit = {
+					FIN = 
+					{
+						exists = yes
+						is_puppet = no
+						NOT = { has_war_with = EST }
+					}
+					SWE =
+					{
+						exists = yes
+						is_puppet = no
+						NOT = { has_war_with = EST }
+					}
 					FIN = {
 						country_event = { id = est.16 days = 1 }
 					}
+					
 					SWE = {
 						country_event = { id = est.16 days = 1 }
 					}
+				}
+			}
 	    }
 	}
-}
-
 	focus = {
 		id = EST_invite_others
 		icon = GFX_goal_tripartite_pact
@@ -2183,24 +2190,22 @@ focus = {
 				add_opinion_modifier = { target = ROOT modifier = nordic_alliance } 
 			}
 			if = {
-					limit = {
-						NOR = {
-							exists = yes
-							is_puppet = no
-							NOT = { has_war_with = EST }
-								}
-							
-						}
+				limit = {
 					NOR = {
-						country_event = { id = est.16 days = 1 }
-					}
-					DEN = {
-						country_event = { id = est.16 days = 1 }
-					}
+						exists = yes
+						is_puppet = no
+						NOT = { has_war_with = EST }
+					}	
+				}
+				NOR = {
+					country_event = { id = est.16 days = 1 }
+				}
+				DEN = {
+					country_event = { id = est.16 days = 1 }
+				}
+			}
+		}
 	}
-	}
-	}
-
 	focus = {
 		id = EST_invite_finland
 		icon = GFX_goal_tripartite_pact
@@ -2226,22 +2231,20 @@ focus = {
 				add_opinion_modifier = { target = ROOT modifier = in_faction } 
 			}
 			if = {
-					limit = {
-						FIN = {
-							exists = yes
-							is_puppet = no
-							NOT = { has_war_with = EST }
-								}
-							
-						}
+				limit = {
 					FIN = {
-						country_event = { id = est.4 days = 1 }
+						exists = yes
+						is_puppet = no
+						NOT = { has_war_with = EST }
 					}
+							
+				}
+				FIN = {
+					country_event = { id = est.4 days = 1 }
+				}
+			}
+		}
 	}
-	}
-	}
-
-	
 	focus = {
 		id = EST_command_forest_industry
 		prerequisite = { focus = EST_ensv }
@@ -2250,16 +2253,19 @@ focus = {
 		y = 4
 		cost = 10
 		completion_reward = {
-		13 = {
-				if = { limit = { is_owned_by = EST}
+			13 = {
+				if = { 
+					limit = { is_owned_by = EST }
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-				
-			}}}
-		}}
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+				}
+			}
+		}
+	}
 	focus = {
 		id = EST_interventionism
 		icon = GFX_goal_generic_political_pressure
