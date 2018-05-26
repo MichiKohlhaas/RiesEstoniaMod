@@ -624,7 +624,7 @@ focus = {
 		}	
     }
 	focus = {
-		id = POL_rocket_development #change
+		id = EST_rocket_development #change
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = EST_additional_research_slot }
 		
@@ -2432,8 +2432,8 @@ focus = {
 		id = EST_stay_neutral
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = EST_reform_government }
-		mutually_exclusive = { focus = EST_return_of_vapsid }
-		x = 42
+		mutually_exclusive = { focus = EST_return_of_democracy }
+		x = 44
 		y = 2
 		cost = 10
 
@@ -2458,7 +2458,7 @@ focus = {
         id = EST_protect_our_borders
         icon = GFX_goal_generic_construct_military
         prerequisite = { focus = EST_stay_neutral }
-        x = 42
+        x = 44
         y = 3
         cost = 20
         completion_reward = {
@@ -2518,7 +2518,7 @@ focus = {
         icon = GFX_goal_generic_axis_build_infantry
         prerequisite = { focus = EST_stay_neutral }
 
-        x = 44
+        x = 46
         y = 3
         cost = 10
 
@@ -2532,7 +2532,7 @@ focus = {
         icon = GFX_goal_generic_defence
         prerequisite = { focus = EST_armed_neutrality focus = EST_protect_our_borders }
 
-        x = 43
+        x = 45
         y = 4
         cost = 10
 
@@ -2548,7 +2548,7 @@ focus = {
 
 
 	focus = {
-		id = EST_return_of_vapsid
+		id = EST_return_of_democracy
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = EST_reform_government }
 		mutually_exclusive = { focus = EST_stay_neutral }
@@ -2717,7 +2717,7 @@ focus = {
 	focus = {
 		id = EST_capitalise_our_nation
 		icon = GFX_goal_anti_comintern_pact
-		prerequisite = { focus = EST_return_of_vapsid }
+		prerequisite = { focus = EST_return_of_democracy }
 
 		available = {
 		OR {
@@ -2768,7 +2768,7 @@ focus = {
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = EST_demand_lithuania }
 		
-		x = 46
+		x = 48
 		y = 5
 
 		cost = 10
@@ -2812,7 +2812,7 @@ focus = {
 			}
 		}
 
-		x = 46
+		x = 48
 		y = 3
 		cost = 10
 
@@ -2850,7 +2850,7 @@ focus = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = EST_demand_latvia }
 
-		x = 46
+		x = 48
 		y = 4
 		cost = 10
 
@@ -2887,7 +2887,7 @@ focus = {
 	focus = {
 		id = EST_spread_democracy
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = EST_return_of_vapsid }
+		prerequisite = { focus = EST_return_of_democracy }
 
 		available = {
 		OR {
@@ -2949,8 +2949,8 @@ focus = {
 		}
 		}
 
-		x = 48
-		y = 3
+		x = 42
+		y = 4
 
 		cost = 10
 

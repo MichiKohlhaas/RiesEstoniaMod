@@ -182,7 +182,6 @@ create_field_marshal = {
 	picture = "laidoner.dds"
 	traits = { fast_planner defensive_doctrine }
 	skill = 3
-	id = 1
 }
 
 create_corps_commander = {
@@ -190,7 +189,6 @@ create_corps_commander = {
 	picture = "aleksander.dds"
 	traits = { ranger }
 	skill = 1
-	id = 2
 }
 
 create_navy_leader = {
@@ -198,5 +196,4 @@ create_navy_leader = {
 	picture = "Portrait_Europe_More_Generic_navy_2.dds"
 	traits = { old_guard_navy }
 	skill = 3
-	id = 28
 }
